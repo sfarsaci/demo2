@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import io.opentelemetry.api.OpenTelemetry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ public class SomeController {
     @GetMapping("/")
     public String handler() {
         log.info("james is the best");
+
         return "success";
     }
 }
